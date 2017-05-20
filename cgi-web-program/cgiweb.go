@@ -64,7 +64,7 @@ func makeNameVal(strSlice []string) (ok bool, nv NameVal) {
 	length := len(strSlice)
 	// only one name/value pair allowed (one equal = per pair)
 	if length != 2 {
-		fmt.Println("ERROR: problem making a name/value pair. Possible duplicate equal sign in string")
+		// fmt.Println("ERROR: problem making a name/value pair. Possible duplicate equal sign in string", " Issue: ")
 		return
 	} else {
 		nv.name = strSlice[0]
